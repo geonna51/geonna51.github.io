@@ -1,0 +1,94 @@
+.bgimage
+{
+    height: 100vh;
+    background-image: url("https://papers.co/wallpaper/papers.co-ml66-mountain-bw-dark-high-sky-nature-rocky-36-3840x2400-4k-wallpaper.jpg");    background-size:cover;
+    position: relative;
+}
+
+.hero_title
+{
+    font-size: 3.5rem;
+}
+
+.hero_desc
+{
+    font-size: 2rem;
+}
+
+.hero-text
+{
+    text-align:center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:black;
+
+}
+
+/* All navbar stuff */
+ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+li a
+{
+    display:block;
+    text-align:center;
+    float:right;
+    padding-right:5px;
+}
+
+.navbar-nav
+{
+    display:flex;
+    justify-content:flex-end;
+    width:100%
+}
+/*about section*/
+.imageAboutPage
+{
+    width:100%    
+}
+
+/* G icon shape*/
+.navbar-icon
+{
+    width: 60px;
+    height: 40px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    object-fit: cover;
+}
+
+/*scrolled color */
+.navbar {
+    transition: all 0.8s ease;
+  }
+  
+  .navbar-scrolled {
+    background-color:rgba(0,0,0,0.32);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.001)
+  }
+
+.social-icons
+{
+    font-size:36px;
+    cursor:pointer;
+}
+.fa-linkedlin:hover
+{
+    color:#008000;
+}
+.fab
+{
+    color#000000
+}
+#footer
+{
+    background-color: #808080;
+    text-align: center;
+}

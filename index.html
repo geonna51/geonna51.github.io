@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-George</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.pinimg.com/736x/44/99/8e/44998e9107da8f7ae969319bb5d23fb4.jpg" style="width:65px"; class="navbar-icon">
+    </a>
+  </div>
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link"  href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a class="nav-link"  href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Main banner-->
+<section class="bgimage" id="Home">
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+      <h2 class="hero_title">Hi, I'm George.</h2>
+      <p class="hero_desc"> Hi, I'm George, a rising sophomore at Cornell University studying Computer Science. I'm passionate about software development, web design, and leveraging technology to solve real-world problems.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!--About Section-->
+<section id="about">
+  <div class="container mt-4 pt-4">
+    <h1 class="text-center">About Me</h1>
+    <div class="row mt-4">
+      <div class="col-lg-4">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQGjeFymSFw4ZA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693153993193?e=1730937600&v=beta&t=k4I4KP0w2KwShD7vTkLyPG5_VR718EosyD5UvExcclw" class="imageAboutPage">
+      </div>
+      <div class="col-lg-8">
+        <p>         <p> I'm George Nnanyelugo, a rising sophomore at Cornell University majoring in Computer Science. I'm passionate about software development, web design, and using technology to solve real-world problems. Inspired by my parents' work in healthcare and my high school internship at Amen Med Care, I believe in the power of technology to improve lives.
+        </p>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <ul>
+              <li>Name: George Nnanyelugo</li>
+              <li>Age: 19</li>
+              <li>Occuptation: Software Developer, Student</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <p>
+            Outside of my academic pursuits, I am an avid basketball fan. I enjoy creating software that reflects my passions and interests, combining my technical skills with my love for the sport. My goal is to gain practical experience through internships and personal projects to break into the tech industry, with a long-term aspiration to enter the health tech sector. I am always looking for opportunities to learn, grow, and make meaningful contributions.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Portfolio Section-->
+<section id="Portfolio">
+  <div class="container mt-4 pt-4">
+    <h1 class="text-center">Projects</h1>
+    <div class="row mt-4">
+      <!-- Video on the Left -->
+      <div class="col-lg-4">
+        <iframe src="https://drive.google.com/file/d/1JQcGZlJb3L6xfI6d0Pey6u7Z_Fw-XErS/preview" width="100%" height="315" allow="autoplay"></iframe>
+      </div>
+      <!-- Description on the Right -->
+      <div class="col-lg-8">
+        <h2><a href="https://github.com/geonna51/NBA_Trade_Analyzer" target="_blank" rel="noopener noreferrer">NBA Trade Analyzer</a></h2>
+        <p>
+          The NBA Trade Analyzer is a web application built to analyze and evaluate potential trades in the NBA. The application allows users to input trade details and evaluates the fairness and impact of the trade using custom algorithms.
+        </p>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <ul>
+              <li><strong>Technologies Used:</strong> Flask, Python, HTML, CSS</li>
+              <li>SQL database for trade data storage and retrieval</li>
+              <li>Bootstrap for responsive UI design</li>
+              <li>JavaScript for dynamic elements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <p>
+            The web app features include player comparisons, team analysis, and the ability to simulate trades across multiple teams. It offers users a seamless interface to evaluate whether proposed trades are realistic and beneficial for the teams involved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer section-->
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="social-icons mt-4">
+      <a href="https://www.linkedin.com/in/georgennanyelugo/" target="_blank"><i class="fab fa-linkedin"></i></a></a>
+    </div>
+  </div>
+</footer>
+
+
+</section>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+</body>
+</html>
