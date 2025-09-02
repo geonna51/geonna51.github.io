@@ -1,7 +1,9 @@
 .bgimage
 {
     height: 100vh;
-    background-image: url("https://papers.co/wallpaper/papers.co-ml66-mountain-bw-dark-high-sky-nature-rocky-36-3840x2400-4k-wallpaper.jpg");    background-size:cover;
+    background-image: url("cornell.jpg");
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -22,8 +24,35 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:black;
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-image
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+:root, html, body
+{
+    scroll-behavior:smooth;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color:#111827;
 }
 
 /* All navbar stuff */
@@ -47,7 +76,22 @@ li a
 {
     display:flex;
     justify-content:flex-end;
-    width:100%
+    width:100%;
+}
+
+/* Navbar link polish */
+.navbar-nav .nav-link
+{
+    display:inline-block;
+    float:none;
+    padding: 8px 12px;
+    color:#0f172a;
+    font-weight:600;
+}
+
+.navbar-nav .nav-link:hover
+{
+    color:#2563eb;
 }
 /*about section*/
 .imageAboutPage
@@ -66,12 +110,16 @@ li a
 
 /*scrolled color */
 .navbar {
-    transition: all 0.8s ease;
+    transition: all 0.4s ease;
+    padding: 10px 16px;
+    background-color: rgba(255,255,255,0.75);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
   }
   
   .navbar-scrolled {
-    background-color:rgba(0,0,0,0.32);
-    box-shadow: 0 3px 5px rgba(0,0,0,0.001)
+    background-color:rgba(255,255,255,0.92);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08)
   }
 
 .social-icons
@@ -79,16 +127,80 @@ li a
     font-size:36px;
     cursor:pointer;
 }
-.fa-linkedlin:hover
+.fa-linkedin:hover
 {
-    color:#008000;
+    color:#0ea5e9;
 }
 .fab
 {
-    color#000000
+    color:#ffffff;
 }
 #footer
 {
-    background-color: #808080;
+    background-color: #0f172a;
     text-align: center;
+}
+
+/* Anchor offset for fixed navbar */
+#Home, #about, #Portfolio, #contact
+{
+    scroll-margin-top: 80px;
+}
+
+/* Hero improvements */
+.bgimage:before
+{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.6));
+}
+
+.hero_title
+{
+    font-weight:700;
+    letter-spacing:0.3px;
+}
+
+.hero_desc
+{
+    max-width: 900px;
+}
+
+/* Project card styling */
+.project-card
+{
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.project-card h2
+{
+    margin-bottom: 8px;
+}
+
+.project-card ul
+{
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 18px;
+    overflow: visible;
+}
+
+.project-card h5
+{
+    font-weight:600;
+    font-size: 1rem;
+    color:#374151;
+}
+
+/* About image polish */
+.imageAboutPage
+{
+    width:100%;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }

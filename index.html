@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -24,9 +27,9 @@
     </a>
   </div>
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
       <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link"  href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a class="nav-link"  href="#Portfolio">Projects</a></li>
       <li class="nav-item"><a class="nav-link"  href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -38,7 +41,7 @@
     <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
       <h2 class="hero_title">Hi, I'm George.</h2>
-      <p class="hero_desc"> Hi, I'm George, a rising sophomore at Cornell University studying Computer Science. I'm passionate about software development, web design, and leveraging technology to solve real-world problems.</p>
+      <p class="hero_desc">I'm a junior at Cornell University studying Computer Science. I'm passionate about software development, web design, and leveraging technology to solve real-world problems.</p>
     </div>
   </div>
   </div>
@@ -50,24 +53,22 @@
     <h1 class="text-center">About Me</h1>
     <div class="row mt-4">
       <div class="col-lg-4">
-        <img src="https://media.licdn.com/dms/image/v2/D5603AQGjeFymSFw4ZA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1693153993193?e=1730937600&v=beta&t=k4I4KP0w2KwShD7vTkLyPG5_VR718EosyD5UvExcclw" class="imageAboutPage">
+        <img src="profile image.jpeg" class="imageAboutPage">
       </div>
       <div class="col-lg-8">
-        <p>         <p> I'm George Nnanyelugo, a rising sophomore at Cornell University majoring in Computer Science. I'm passionate about software development, web design, and using technology to solve real-world problems. Inspired by my parents' work in healthcare and my high school internship at Amen Med Care, I believe in the power of technology to improve lives.
-        </p>
+        <p>I'm George Nnanyelugo, a junior at Cornell University majoring in Computer Science. I'm passionate about software development, web design, and using technology to solve real-world problems. I enjoy building projects that challenge me to think creatively and practically, while also sharpening my technical skills.</p>
         <div class="row mt-3">
           <div class="col-md-6">
             <ul>
               <li>Name: George Nnanyelugo</li>
-              <li>Age: 19</li>
-              <li>Occuptation: Software Developer, Student</li>
+              <li>Age: 20</li>
+              <li>Occupation: Software Developer, Student</li>
             </ul>
           </div>
         </div>
         <div class="row mt-3">
           <p>
-            Outside of my academic pursuits, I am an avid basketball fan. I enjoy creating software that reflects my passions and interests, combining my technical skills with my love for the sport. My goal is to gain practical experience through internships and personal projects to break into the tech industry, with a long-term aspiration to enter the health tech sector. I am always looking for opportunities to learn, grow, and make meaningful contributions.
-
+            Outside of my academic pursuits, I am an avid basketball fan. I enjoy creating software that reflects my passions and interests, combining my technical skills with my love for the sport. My goal is to gain practical experience through internships and personal projects to break into the tech industry. I am always looking for opportunities to learn, grow, and make meaningful contributions.
           </p>
         </div>
       </div>
@@ -78,7 +79,7 @@
 <section id="Portfolio">
   <div class="container mt-4 pt-4">
     <h1 class="text-center">Projects</h1>
-    <div class="row mt-4">
+    <div class="row mt-4 project-card">
       <!-- Video on the Left -->
       <div class="col-lg-4">
         <iframe src="https://drive.google.com/file/d/1JQcGZlJb3L6xfI6d0Pey6u7Z_Fw-XErS/preview" width="100%" height="315" allow="autoplay"></iframe>
@@ -91,18 +92,63 @@
         </p>
         <div class="row mt-3">
           <div class="col-md-6">
+            <h5>Technologies Used:</h5>
             <ul>
-              <li><strong>Technologies Used:</strong> Flask, Python, HTML, CSS</li>
-              <li>SQL database for trade data storage and retrieval</li>
-              <li>Bootstrap for responsive UI design</li>
-              <li>JavaScript for dynamic elements</li>
+              <li>Flask & Python</li>
+              <li>HTML, CSS & JavaScript</li>
+              <li>SQL Database</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Key Features:</h5>
+            <ul>
+              <li>Player comparisons</li>
+              <li>Team analysis</li>
+              <li>Trade simulation</li>
+              <li>Real-time evaluation</li>
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+    
+    <!-- Amin Project -->
+    <div class="row mt-5 project-card">
+      <!-- Video on the Left -->
+      <div class="col-lg-4">
+        <video width="100%" height="315" controls>
+          <source src="ScreenRecording_09-02-2025 16-43-24_1.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Description on the Right -->
+      <div class="col-lg-8">
+        <h2>Amin - Stock Tracking iOS App</h2>
+        <p>
+          Amin is an iOS application built to help users track and manage stocks of interest. The app merges several ideas into one platform, allowing users to pick specific stocks, explore pre-built portfolios such as high-risk and safe options, and view simplified investment ideas designed to be accessible across different countries. The focus is on making stock tracking intuitive and approachable for new investors.
+        </p>
         <div class="row mt-3">
-          <p>
-            The web app features include player comparisons, team analysis, and the ability to simulate trades across multiple teams. It offers users a seamless interface to evaluate whether proposed trades are realistic and beneficial for the teams involved.
-          </p>
+          <div class="col-md-6">
+            <h5>Technologies Used:</h5>
+            <ul>
+              <li>Swift & SwiftUI</li>
+              <li>Core Data</li>
+              <li>Alamofire</li>
+              <li>Charts Library</li>
+              <li>Firebase Authentication</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Key Features:</h5>
+            <ul>
+              <li>Customizable watchlists</li>
+              <li>Portfolio exploration by risk level</li>
+              <li>Real-time stock data</li>
+              <li>Investment recommendations</li>
+              <li>Cross-device sync</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
